@@ -43,6 +43,25 @@ print("Hashed password:\n" + hashed_password)
 with open("hashed_passwords.txt", "a") as f:
     f.write(hashed_password + "\n")</code>
 </div>
+<br>
+<b>Reflection question:</b> Suppose an attacker captures a hashed password and replaces an
+existing credential in the database with it. Does this mean they can now log in as another
+user? Why or why not? How can we prevent this kind of attack?
+
+<b>Answer:</b> If an attacker captures a hashed password and replaces another user’s hashed
+password in the database with it, they may be able to log in as that user but only if the
+system is poorly secured. In simple hash-based authentication systems without unique
+salts, this attack can succeed because the system compares the input password (after
+hashing) to the stored hash. So, if the attacker knows the password corresponding to the
+hash they inserted, they can log in using that password, effectively impersonating the
+user whose account was overwritten.
+However, properly designed systems use salts unique random values added to each
+user's password before hashing which ensures that identical passwords produce different
+hashes. This means a hash captured from one account can’t simply be reused for
+another. To prevent this kind of attack, systems should use strong hashing algorithms like
+bcrypt or Argon2, enforce per-user salts, and secure credential storage. Additional
+safeguards like multi-factor authentication and database integrity checks further reduce
+the risk of successful credential tampering.
 
 
     
