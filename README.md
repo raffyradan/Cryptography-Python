@@ -1,4 +1,4 @@
-🔐 Password Hashing 🛡️
+# 🔐 Password Hashing 🛡️
 
 A Python script that performs the following operations:
 
