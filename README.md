@@ -2,11 +2,11 @@
 
 A Python script that performs the following operations:
 
-1. Prompt the user to enter a password.
-2. Hash the password using the SHA-256 algorithm.
-3. Store the hashed password in a file named hashed_passwords.txt (each new hash
+- Prompt the user to enter a password.
+- Hash the password using the SHA-256 algorithm.
+- Store the hashed password in a file named hashed_passwords.txt (each new hash
 should be appended as a new line).
-4. Display the hashed password on the screen.
+- Display the hashed password on the screen.
 
 ![image](https://github.com/user-attachments/assets/e96d8005-e3fd-4f2b-8696-66fefaef9353)
 
