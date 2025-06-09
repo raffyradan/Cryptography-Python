@@ -21,7 +21,7 @@ password on the screen for verification and appends it to a file named
 hashed_passwords.txt, ensuring the hash is stored persistently, with each hashed
 password saved on a new line.
 
-### 👨‍💻 Codes:
+<b>👨‍💻 Codes:</b>
 
 <div class="code-cell">
 <code>from hashlib import sha256
